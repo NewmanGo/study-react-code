@@ -408,7 +408,7 @@ export function renderWithHooks(
   ReactCurrentDispatcher.current = ContextOnlyDispatcher;
 
   const renderedWork: Fiber = (currentlyRenderingFiber: any);
-
+  debugger
   renderedWork.memoizedState = firstWorkInProgressHook;
   renderedWork.expirationTime = remainingExpirationTime;
   renderedWork.updateQueue = (componentUpdateQueue: any);

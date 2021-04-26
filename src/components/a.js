@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { sleep } from "../utils";
-import B from "./b";
+import { ClassB, HookB } from "./b";
 
 class A extends Component {
   constructor(props) {
@@ -9,13 +8,13 @@ class A extends Component {
   }
 
   render() {
-    console.log('render-A');
+    console.log("render-A");
     return (
       <div className="A">
         A
         <div className="child-wrap">
-          <B index="0" />
-          <B index="1" />
+          <ClassB />
+          <HookB />
         </div>
       </div>
     );
